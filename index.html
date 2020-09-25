@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+	</script>
+
+    <script src="https://kit.fontawesome.com/c6378e478e.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+
+	<title>Instagram</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-light bg-light">
+		<div class="p-2 flex-grow-1 bd-highlight ml-1">
+        <a class="navbar-brand" href="#">
+	        <i class="fab fa-instagram"></i>&nbspInstagram
+	    </a>
+        </div>
+		<div class="p-2 bd-highlight">
+			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+			  Create a new post
+			</button>
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+					
+						<button type="button" class="close text-right p-2" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					
+						<div class="modal-body p-2">
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						</div>
+                        <div class="row p-2">
+                            <div class="col-1 mr-1">
+                                <button type="button" class="btn btn-outline-secondary"><i class="fas fa-camera"></i></button>
+                            </div>
+                            <div class="col-1">
+                                <button type="button" class="btn btn-outline-secondary"><i class="fas fa-map-marker-alt"></i></button>
+                            </div>
+                        </div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+							<button type="button" class="btn btn-success">Publish</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="p-2 bd-highlight">
+			<div class="dropdown">
+				<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		        <i class="fas fa-cog"></i>
+		        </button>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">Another action</a>
+					<a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Log Out</a>
+				</div>
+			</div>
+		</div>
+		
+	</nav>
+
+	<ul class="nav nav-pills mb-1 mt-1 d-flex justify-content-center" id="pills-tab" role="tablist">
+		<li class="nav-item" role="presentation">
+			<a class="btn btn-light active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+				aria-controls="pills-home" aria-selected="true"><i class="fas fa-th"></i></a>
+		</li>
+		<li class="nav-item" role="presentation">
+			<a class="btn btn-light" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+				aria-controls="pills-profile" aria-selected="false"><i class="fas fa-square"></i></a>
+		</li>
+	</ul>
+    <div class="tab-content" id="pills-tabContent">
+		<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+			<div class="container mb-3">
+                <div class="row no-gutters">
+					<div class="col-4">
+						<div class="card" style="width: 100%;">
+							<img src="https://picsum.photos/300/200?random=1" class="card-img-top" alt="...">
+						</div>
+					</div>
+                    <div class="col-4">
+						<div class="card" style="width: 100%;">
+							<img src="https://picsum.photos/300/200?random=2" class="card-img-top" alt="...">
+						</div>
+					</div>
+                    <div class="col-4">
+						<div class="card" style="width: 100%;">
+							<img src="https://picsum.photos/300/200?random=3" class="card-img-top" alt="...">
+						</div>
+					</div>
+                     <div class="col-4">
+						<div class="card" style="width: 100%;">
+							<img src="https://picsum.photos/300/200?random=4" class="card-img-top" alt="...">
+						</div>
+					</div>
+                     <div class="col-4">
+						<div class="card" style="width: 100%;">
+							<img src="https://picsum.photos/300/200?random=5" class="card-img-top" alt="...">
+						</div>
+					</div>
+                     <div class="col-4">
+						<div class="card" style="width: 100%;">
+							<img src="https://picsum.photos/300/200?random=6" class="card-img-top" alt="...">
+						</div>
+					</div>
+                     <div class="col-4">
+						<div class="card" style="width: 100%;">
+							<img src="https://picsum.photos/300/200?random=7" class="card-img-top" alt="...">
+						</div>
+					</div>
+                     <div class="col-4">
+						<div class="card" style="width: 100%;">
+							<img src="https://picsum.photos/300/200?random=8" class="card-img-top" alt="...">
+						</div>
+					</div>
+                     <div class="col-4">
+						<div class="card" style="width: 100%;">
+							<img src="https://picsum.photos/300/200?random=9" class="card-img-top" alt="...">
+						</div>
+					</div>
+                </div>
+			</div>
+		
+		</div>
+        <div class="tab-pane fade bg-light" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+			<div class="container" >
+                <div class="row justify-content-center">
+                    <div class="card m-3" style="width: 75%;">
+                        <div class="card-header bg-transparent">
+                            <div class="row justify-content-between">
+                                <div class="col-3">
+                                    <h5>My first photo</h5>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h5>24/07/2019</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://picsum.photos/450/300?random=1" class="card-img-top" alt="...">
+						<div class="row mt-3">
+                                <div class="col-4 ml-3">
+                                    <h5 class="card-subtitle text-muted">27 likes</h5>
+                                </div>
+                        </div>
+                        <div class="card-body">
+							<p class="card-text">Lorem fistrum tiene musho peligro jarl no te digo trigo por no llamarte Rodrigor a gramenawer
+								diodeno. Al ataquerl me cago en tus muelas se calle ustée va usté muy cargadoo fistro me cago en tus muelas de
+								la pradera. A wan condemor a peich jarl amatomaa. Sexuarl por la gloria de mi madre fistro ahorarr por la gloria
+								de mi madre sexuarl al ataquerl. Ese hombree apetecan ese hombree va usté muy cargadoo jarl de la pradera la
+								caidita. Te voy a borrar el cerito fistro ahorarr hasta luego Lucas la caidita. Pupita no puedor ahorarr va usté
+								muy cargadoo mamaar. Se calle ustée pupita mamaar sexuarl a gramenawer. Va usté muy cargadoo la caidita condemor
+								apetecan de la pradera ese hombree condemor jarl caballo blanco caballo negroorl papaar papaar.</p>
+						</div>
+                        <div class="form-group row mb-3">
+                            <div class="col-2 text-center">
+                                <i class="far fa-heart fa-2x" style="color: #AEAEAE"></i>
+                            </div>
+                            <div class="col-8">
+                                 <input type="password" class="form-control" id="inputPassword" placeholder="Comment...">
+                            </div>
+                            <div class="col-2 text-center">
+                                <i class="fas fa-ellipsis-v fa-2x" style="color: #AEAEAE"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="card m-3" style="width: 75%;">
+                        <div class="card-header bg-transparent">
+                            <div class="row justify-content-between">
+                                <div class="col-3">
+                                    <h5>My second photo</h5>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h5>31/07/2019</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://picsum.photos/600/400?random=2" class="card-img-top" alt="...">
+						<div class="row mt-3">
+                                <div class="col-4 ml-3">
+                                    <h5 class="card-subtitle text-muted">12 likes</h5>
+                                </div>
+                        </div>
+                        <div class="card-body">
+							<p class="card-text">Lorem fistrum tiene musho peligro jarl no te digo trigo por no llamarte Rodrigor a gramenawer
+								diodeno. Al ataquerl me cago en tus muelas se calle ustée va usté muy cargadoo fistro me cago en tus muelas de
+								la pradera. A wan condemor a peich jarl amatomaa. Sexuarl por la gloria de mi madre fistro ahorarr por la gloria
+								de mi madre sexuarl al ataquerl. Ese hombree apetecan ese hombree va usté muy cargadoo jarl de la pradera la
+								caidita. Te voy a borrar el cerito fistro ahorarr hasta luego Lucas la caidita. Pupita no puedor ahorarr va usté
+								muy cargadoo mamaar. Se calle ustée pupita mamaar sexuarl a gramenawer. Va usté muy cargadoo la caidita condemor
+								apetecan de la pradera ese hombree condemor jarl caballo blanco caballo negroorl papaar papaar.</p>
+						</div>
+                        <div class="form-group row mb-3">
+                            <div class="col-2 text-center">
+                                <i class="far fa-heart fa-2x" style="color: #AEAEAE"></i>
+                            </div>
+                            <div class="col-8">
+                                 <input type="password" class="form-control" id="inputPassword" placeholder="Comment...">
+                            </div>
+                            <div class="col-2 text-center">
+                                <i class="fas fa-ellipsis-v fa-2x" style="color: #AEAEAE"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="card m-3" style="width: 75%;">
+                        <div class="card-header bg-transparent">
+                            <div class="row justify-content-between">
+                                <div class="col-3">
+                                    <h5>My third photo</h5>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h5>09/08/2019</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://picsum.photos/600/400?random=3" class="card-img-top" alt="...">
+						<div class="row mt-3">
+                                <div class="col-4 ml-3">
+                                    <h5 class="card-subtitle text-muted">39 likes</h5>
+                                </div>
+                        </div>
+                        <div class="card-body">
+							<p class="card-text">Lorem fistrum tiene musho peligro jarl no te digo trigo por no llamarte Rodrigor a gramenawer
+								diodeno. Al ataquerl me cago en tus muelas se calle ustée va usté muy cargadoo fistro me cago en tus muelas de
+								la pradera. A wan condemor a peich jarl amatomaa. Sexuarl por la gloria de mi madre fistro ahorarr por la gloria
+								de mi madre sexuarl al ataquerl. Ese hombree apetecan ese hombree va usté muy cargadoo jarl de la pradera la
+								caidita. Te voy a borrar el cerito fistro ahorarr hasta luego Lucas la caidita. Pupita no puedor ahorarr va usté
+								muy cargadoo mamaar. Se calle ustée pupita mamaar sexuarl a gramenawer. Va usté muy cargadoo la caidita condemor
+								apetecan de la pradera ese hombree condemor jarl caballo blanco caballo negroorl papaar papaar.</p>
+						</div>
+                        <div class="form-group row mb-3">
+                            <div class="col-2 text-center">
+                                <i class="far fa-heart fa-2x" style="color: #AEAEAE"></i>
+                            </div>
+                            <div class="col-8">
+                                 <input type="password" class="form-control" id="inputPassword" placeholder="Comment...">
+                            </div>
+                            <div class="col-2 text-center">
+                                <i class="fas fa-ellipsis-v fa-2x" style="color: #AEAEAE"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+			</div>
+        </div>
+    </div>
+</body>
+
+</html>
